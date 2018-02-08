@@ -7,7 +7,7 @@ clean:
 info:
 	sudo modinfo boring.ko
 test:
+	-sudo rmmod boring
 	sudo dmesg -C
 	sudo insmod boring.ko
-	sudo rmmod boring
 	sudo dmesg
